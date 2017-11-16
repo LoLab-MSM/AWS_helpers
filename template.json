@@ -1,0 +1,12 @@
+{
+    "jobDefinition": "mutualinformation_EstCC:4",
+    "parameters": {},
+    "retryStrategy": {
+        "attempts": 2
+    },
+    "containerOverrides": {
+        "vcpus": CPU,
+        "memory": 4000,
+        "command": ["calculate_MI.sh", "INPUTCOL", "OUTPUTCOL", "PARAM", "CORR"]
+    }
+}
